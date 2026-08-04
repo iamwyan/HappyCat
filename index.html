@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff6fb" />
+    <meta name="description" content="Un gatito y una dosis de ánimo para alegrarte el día." />
+    <title>Happy Cat — Tu dosis de alegría</title>
+    <link rel="preconnect" href="https://cataas.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.mjs"></script>
+  </head>
+  <body>
+    <div class="blob blob-one" aria-hidden="true"></div>
+    <div class="blob blob-two" aria-hidden="true"></div>
+    <div class="sparkles" aria-hidden="true">
+      <span>✦</span><span>♡</span><span>✿</span><span>✦</span><span>♡</span>
+    </div>
+
+    <main class="page-shell">
+      <section class="happy-card" aria-labelledby="page-title">
+        <header class="card-header">
+          <div class="eyebrow"><span aria-hidden="true">☀</span> una pausa feliz</div>
+          <h1 id="page-title">Happy <em>Cat</em></h1>
+          <p>Un gatito. Un poquito de ánimo. Un día más bonito.</p>
+        </header>
+
+        <div class="photo-wrap">
+          <span class="tape tape-left" aria-hidden="true"></span>
+          <span class="tape tape-right" aria-hidden="true"></span>
+          <div class="photo-frame is-loading">
+            <img id="cat-image" src="" alt="" />
+            <div class="loading-cat" aria-hidden="true">🐾</div>
+          </div>
+          <span class="photo-doodle" aria-hidden="true">✿</span>
+        </div>
+
+        <div class="quote-area">
+          <span class="quote-mark" aria-hidden="true">“</span>
+          <blockquote id="quote">Preparando una dosis de alegría…</blockquote>
+          <span class="scribble" aria-hidden="true"></span>
+        </div>
+
+        <button id="new-cat-button" type="button">
+          <span class="button-icon" aria-hidden="true">🐾</span>
+          <span class="button-label">¡Otro gatito!</span>
+          <span class="button-shine" aria-hidden="true"></span>
+        </button>
+        <p id="status" role="status" aria-live="polite"></p>
+
+        <footer>Hecho para sacarte una sonrisa <span aria-hidden="true">♥</span></footer>
+      </section>
+    </main>
+  </body>
+</html>
